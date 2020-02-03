@@ -19,8 +19,6 @@ ENV RABBITMQ_VERSION=3.6.14 \
     http_proxy=http://10.99.99.10:3128 \
     https_proxy=http://10.99.99.10:3128
 
-RUN echo -e "http://nl.alpinelinux.org/alpine/v3.5/main\nhttp://nl.alpinelinux.org/alpine/v3.5/community" > /etc/apk/repositories
-
 RUN \
   apk --update add \
     coreutils curl xz "su-exec>=0.2" \
