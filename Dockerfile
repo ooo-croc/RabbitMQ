@@ -16,8 +16,8 @@ ENV RABBITMQ_VERSION=3.6.14 \
     RABBITMQ_PLUGINS_DIR=/usr/lib/rabbitmq/plugins \
     RABBITMQ_PLUGINS_EXPAND_DIR=/var/lib/rabbitmq/plugins \
     LANG=en_US.UTF-8 \
-    http_proxy=http://10.99.99.10:3128 \
-    https_proxy=http://10.99.99.10:3128
+#    http_proxy=http://10.99.99.10:3128 \
+#    https_proxy=http://10.99.99.10:3128
 
 RUN \
   apk --update add \
