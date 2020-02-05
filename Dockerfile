@@ -59,6 +59,8 @@ RUN \
 
 RUN    ["chmod", "+x", "/launch.sh"]
 
+RUN ["chmod", "+wrx", "/var/lib/rabbitmq"]
+
 VOLUME $HOME
 EXPOSE 4369 5671 5672 15672 25672
 ENTRYPOINT ["/launch.sh"]
