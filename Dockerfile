@@ -59,7 +59,7 @@ RUN \
 
 RUN    ["chmod", "+x", "/launch.sh"]
 
-RUN ["chmod", "+wrx", "/var/lib/rabbitmq"]
+RUN ["chmod", "+wrx", "/usr/lib/rabbitmq/sbin/rabbitmq-server"]
 
 VOLUME $HOME
 EXPOSE 4369 5671 5672 15672 25672
