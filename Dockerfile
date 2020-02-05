@@ -44,7 +44,7 @@ RUN \
   cp /var/lib/rabbitmq/.erlang.cookie /root/ && \
   chown rabbitmq /var/lib/rabbitmq/.erlang.cookie && \
   chmod 0600 /var/lib/rabbitmq/.erlang.cookie /root/.erlang.cookie && \
-  chown -R rabbitmq:rabbitmq /usr/lib/rabbitmq /var/lib/rabbitmq && sync && \
+  chown -R rabbitmq /usr/lib/rabbitmq /var/lib/rabbitmq && sync && \
   /usr/lib/rabbitmq/sbin/rabbitmq-plugins --offline enable \
     rabbitmq_management \
     rabbitmq_consistent_hash_exchange \
