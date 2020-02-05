@@ -57,6 +57,8 @@ RUN \
     rabbitmq_web_stomp \
     autocluster
 
+RUN    ["chmod", "+x", "/launch.sh"]
+
 VOLUME $HOME
 EXPOSE 4369 5671 5672 15672 25672
 ENTRYPOINT ["/launch.sh"]
